@@ -1,0 +1,51 @@
+Comment,Designator,Footprint,LCSC Part #
+,,,
+"100nF Unpolarized capacitor, small symbol","C1,C4,C5,C6,C7,C9,C10,C11,C12",C_0402_1005Metric,C1525
+,,,
+"12p Unpolarized capacitor, small symbol","C2,C3",C_0603_1608Metric,C38523
+,,,
+"10uF Unpolarized capacitor, small symbol","C8,C17",C_0402_1005Metric,C15525
+,,,
+"0.1uF Unpolarized capacitor, small symbol","C13,C15,C18,C19",C_0402_1005Metric,C361198
+,,,
+"2.2nF Unpolarized capacitor, small symbol",C16,C_0603_1608Metric,C1604
+,,,
+RED Light emitting diode,D1,D_0603_1608Metric,C2286
+,,,
+YELLOW Light emitting diode,D2,D_0603_1608Metric,C72038
+,,,
+GREEN Light emitting diode,D3,D_0603_1608Metric,C72043
+,,,
+MountingHole_Pad Mounting Hole with connection,"H1,H2,H3,H4",MountingHole_2.2mm_M2_DIN965_Pad,
+,,,
+"Screw_Terminal_01x02 Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",J1,"TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal",
+,,,
+"Conn_01x02 Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",J2,PinHeader_1x02_P1.27mm_Vertical,
+,,,
+USB_B_Micro USB Micro Type B connector,J3,USB_Micro-B_Molex-105017-0001,C10418
+,,,
+"Conn_01x04 Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",J4,PinHeader_1x04_P1.27mm_Vertical,
+,,,
+"Conn_01x07 Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)",J5,PinHeader_1x07_P1.27mm_Vertical,
+,,,
+"Conn_01x06 Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",J6,PinHeader_1x06_P1.27mm_Vertical,
+,,,
+"10k Resistor, small symbol","R1,R2,R3,R4",R_0402_1005Metric,C25744
+,,,
+"220 Resistor, small symbol",R5,R_0805_2012Metric,C17557
+,,,
+"510 Resistor, small symbol","R6,R7,R10",R_0603_1608Metric,C23193
+,,,
+"22 Resistor, small symbol","R8,R9",R_0402_1005Metric,C1532
+,,,
+"SW_Push Push button switch, generic, two pins","SW1,SW2",SW_PUSH_6mm,
+,,,
+"STM32F103C8Tx ARM Cortex-M3 MCU, 64KB flash, 20KB RAM, 72MHz, 2-3.6V, 37 GPIO, LQFP-48",U1,LQFP-48_7x7mm_P0.5mm,C8734
+,,,
+"MPU-6050 InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C",U2,InvenSense_QFN-24_4x4mm_P0.5mm,C24112
+,,,
+"AMS1117 1A Low Dropout regulator, positive, adjustable output, SOT-223",U3,SOT-223-3_TabPin2,C6186 
+,,,
+"W25Q128JVS 128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8",U4,SOIC-8_5.23x5.23mm_P1.27mm,C97521
+,,,
+"Crystal Four pin crystal, GND on pins 2 and 3, small symbol",Y1,Crystal_SMD_3225-4Pin_3.2x2.5mm,C13738
