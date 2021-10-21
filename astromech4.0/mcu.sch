@@ -17,8 +17,8 @@ $Comp
 L MCU_ST_STM32F1:STM32F103C8Tx U?
 U 1 1 616EB531
 P 5050 3800
-F 0 "U?" H 5000 2211 50  0000 C CNN
-F 1 "STM32F103C8Tx" H 5000 2120 50  0000 C CNN
+F 0 "U?" H 4500 2350 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 5600 2350 50  0000 C CNN
 F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4450 2400 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 5050 3800 50  0001 C CNN
 	1    5050 3800
@@ -206,10 +206,6 @@ Wire Wire Line
 	4750 700  4800 700 
 NoConn ~ 4350 3300
 NoConn ~ 4350 3400
-Text GLabel 4350 4600 0    50   Input ~ 0
-UART_RX
-Text GLabel 4350 4700 0    50   Input ~ 0
-UART_TX
 Text GLabel 5650 4700 2    50   Input ~ 0
 D-
 Text GLabel 5650 4800 2    50   Input ~ 0
@@ -240,12 +236,147 @@ Wire Wire Line
 Connection ~ 5150 2300
 Wire Wire Line
 	5150 2300 5250 2300
-Text HLabel 4250 4200 0    50   Input ~ 0
+Text HLabel 4000 4200 0    50   Input ~ 0
 I2C_SCL
 Wire Wire Line
-	4350 4200 4250 4200
-Text HLabel 4250 4300 0    50   Input ~ 0
+	4100 4200 4000 4200
+Text HLabel 4000 4300 0    50   Input ~ 0
 I2C_SDA
 Wire Wire Line
-	4350 4300 4250 4300
+	4100 4300 4000 4300
+$Comp
+L Device:R_Small R?
+U 1 1 616F1CA1
+P 1300 7050
+F 0 "R?" V 1104 7050 50  0000 C CNN
+F 1 "R_Small" V 1195 7050 50  0000 C CNN
+F 2 "" H 1300 7050 50  0001 C CNN
+F 3 "~" H 1300 7050 50  0001 C CNN
+	1    1300 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 616F2787
+P 1300 7350
+F 0 "R?" V 1104 7350 50  0000 C CNN
+F 1 "R_Small" V 1195 7350 50  0000 C CNN
+F 2 "" H 1300 7350 50  0001 C CNN
+F 3 "~" H 1300 7350 50  0001 C CNN
+	1    1300 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 616F2B15
+P 1300 7650
+F 0 "R?" V 1104 7650 50  0000 C CNN
+F 1 "R_Small" V 1195 7650 50  0000 C CNN
+F 2 "" H 1300 7650 50  0001 C CNN
+F 3 "~" H 1300 7650 50  0001 C CNN
+	1    1300 7650
+	0    1    1    0   
+$EndComp
+Text HLabel 4000 4600 0    50   Input ~ 0
+UART_RX
+Text HLabel 4000 4700 0    50   Input ~ 0
+UART_TX
+Wire Wire Line
+	4100 4600 4000 4600
+Wire Wire Line
+	4100 4700 4000 4700
+Text HLabel 5850 4000 2    50   Input ~ 0
+QSPI_CS
+Text HLabel 5850 4100 2    50   Input ~ 0
+QSPI_CLK
+Text HLabel 5850 4200 2    50   Input ~ 0
+SPI_MISO
+Text HLabel 5850 4300 2    50   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	5650 4000 5850 4000
+Wire Wire Line
+	5650 4100 5850 4100
+Wire Wire Line
+	5650 4200 5850 4200
+Wire Wire Line
+	5650 4300 5850 4300
+$Comp
+L power:GND #PWR?
+U 1 1 616F6C4A
+P 4950 5400
+F 0 "#PWR?" H 4950 5150 50  0001 C CNN
+F 1 "GND" H 4955 5227 50  0000 C CNN
+F 2 "" H 4950 5400 50  0001 C CNN
+F 3 "" H 4950 5400 50  0001 C CNN
+	1    4950 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5300 4950 5300
+Connection ~ 4950 5300
+Wire Wire Line
+	4950 5300 5050 5300
+Connection ~ 5050 5300
+Wire Wire Line
+	5050 5300 5150 5300
+Wire Wire Line
+	4950 5300 4950 5400
+Text HLabel 1000 6750 0    50   Input ~ 0
+I2C_SCL
+$Comp
+L Device:R_Small R?
+U 1 1 616F14BF
+P 1300 6750
+F 0 "R?" V 1104 6750 50  0000 C CNN
+F 1 "R_Small" V 1195 6750 50  0000 C CNN
+F 2 "" H 1300 6750 50  0001 C CNN
+F 3 "~" H 1300 6750 50  0001 C CNN
+	1    1300 6750
+	0    1    1    0   
+$EndComp
+Text HLabel 1000 7050 0    50   Input ~ 0
+I2C_SDL
+Text HLabel 1000 7350 0    50   Input ~ 0
+UART_TX
+Text HLabel 1000 7650 0    50   Input ~ 0
+UART_RX
+Wire Wire Line
+	1000 6750 1200 6750
+Wire Wire Line
+	1000 7050 1200 7050
+Wire Wire Line
+	1000 7350 1200 7350
+Wire Wire Line
+	1000 7650 1200 7650
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61723C85
+P 1650 6650
+F 0 "#PWR?" H 1650 6500 50  0001 C CNN
+F 1 "+3V3" H 1665 6823 50  0000 C CNN
+F 2 "" H 1650 6650 50  0001 C CNN
+F 3 "" H 1650 6650 50  0001 C CNN
+	1    1650 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6750 1650 6750
+Wire Wire Line
+	1650 6750 1650 6650
+Wire Wire Line
+	1650 6750 1650 7050
+Wire Wire Line
+	1650 7350 1400 7350
+Connection ~ 1650 6750
+Wire Wire Line
+	1650 7350 1650 7650
+Wire Wire Line
+	1650 7650 1400 7650
+Connection ~ 1650 7350
+Wire Wire Line
+	1400 7050 1650 7050
+Connection ~ 1650 7050
+Wire Wire Line
+	1650 7050 1650 7350
 $EndSCHEMATC
